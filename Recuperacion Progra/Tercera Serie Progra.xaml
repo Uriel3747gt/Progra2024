@@ -1,0 +1,33 @@
+﻿<Window x:Class="RegistroInfo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Registro de Información" Height="250" Width="350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Carnet:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="txtCarnet" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Nombre:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="txtNombre" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Teléfono:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="txtTelefono" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <TextBlock Text="Grado:" Grid.Row="3" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="txtGrado" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+        <Button Content="Guardar" Grid.Row="4" Grid.Column="1" Margin="5" Click="Guardar_Click"/>
+    </Grid>
+</Window>
